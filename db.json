@@ -1,0 +1,32 @@
+{
+  "plugins": [
+    {
+      "id": "6edd25e5-603e-4952-85ce-605c120291fa",
+      "name": "grafana",
+      "description": "description with link image",
+      "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/dde77333b3dbb8ba873bf78c5b903e1203c5152dd24c3d25e704d57a33d3c5f7?apiKey=d47a38f753ec4543bc6dc7dd65a483a0&",
+      "link": "www.wordpress.com"
+    },
+    {
+      "id": "e966ab19-575f-41d1-8cbb-ec75f59e4bb2",
+      "name": "Evera Elemba",
+      "description": "wxcwscw",
+      "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/dde77333b3dbb8ba873bf78c5b903e1203c5152dd24c3d25e704d57a33d3c5f7?apiKey=d47a38f753ec4543bc6dc7dd65a483a0&",
+      "link": "#"
+    },
+    {
+      "id": "1be31cf0-75ce-43aa-888e-5a7c6c5901d5",
+      "name": "Editor",
+      "description": "hitu",
+      "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/dde77333b3dbb8ba873bf78c5b903e1203c5152dd24c3d25e704d57a33d3c5f7?apiKey=d47a38f753ec4543bc6dc7dd65a483a0&",
+      "link": "#"
+    },
+    {
+      "id": "a6c55d31-683b-4279-90b2-4255a20cc2be",
+      "name": "angelo",
+      "description": "cxwcwvwdsgvdfsdqfin scihdsfzel schoifhzeo dhoizefl\nzhfefie\nfbefbezjfblezfn\nqdfzeklf",
+      "image": "gschsc",
+      "link": "scc"
+    }
+  ]
+}
