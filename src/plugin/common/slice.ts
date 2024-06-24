@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { createPlugin, deletePlugin, findPluginById, foundPlugin, updatePlugin } from './action';
-import { RootState } from './store';
+import { RootState } from '../../common/store';
 
 interface PluginData {
   id: string;

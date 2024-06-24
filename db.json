@@ -1,32 +1,72 @@
 {
+  "users": [
+    {
+      "id": "08cb",
+      "email": "mavoungouzenou@gmail.com",
+      "password": "kritektest"
+    },
+    {
+      "id": "68ef",
+      "email": "kiamssnack@gmail.com",
+      "password": "123456789"
+    }
+  ],
   "plugins": [
     {
-      "id": "6edd25e5-603e-4952-85ce-605c120291fa",
-      "name": "grafana",
-      "description": "description with link image",
-      "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/dde77333b3dbb8ba873bf78c5b903e1203c5152dd24c3d25e704d57a33d3c5f7?apiKey=d47a38f753ec4543bc6dc7dd65a483a0&",
-      "link": "www.wordpress.com"
+      "id": "4adb1e0c-3386-42e5-a5c1-f836400a1801",
+      "name": "simplesurance WooCommerce Plugin",
+      "description": "Our technology changes the way people see and buy insurances\nsimplesurance with its brands provide both online retailers and traditional retail outlets a way to extend the level of service they provide to customers, as well as increase their own profit margins by offering insurance or extended warranties with their own products.",
+      "image": "https://ps.w.org/simplesurance-insurance-integration/assets/icon.svg?rev=1540642",
+      "link": "https://wordpress.org/plugins/simplesurance-insurance-integration/"
     },
     {
-      "id": "e966ab19-575f-41d1-8cbb-ec75f59e4bb2",
-      "name": "Evera Elemba",
-      "description": "wxcwscw",
-      "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/dde77333b3dbb8ba873bf78c5b903e1203c5152dd24c3d25e704d57a33d3c5f7?apiKey=d47a38f753ec4543bc6dc7dd65a483a0&",
-      "link": "#"
+      "id": "28fafc50-5af5-469f-b331-083efbfd91a0",
+      "name": "Money Manager",
+      "description": "Money Manager is an easy-to-use multi-currency finance software. It helps organize personal or small business finances and keeps track of where, when and how the money goes.",
+      "image": "https://ps.w.org/money-manager/assets/icon-128x128.png?rev=2535951",
+      "link": "https://wordpress.org/plugins/money-manager/"
     },
     {
-      "id": "1be31cf0-75ce-43aa-888e-5a7c6c5901d5",
-      "name": "Editor",
-      "description": "hitu",
-      "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/dde77333b3dbb8ba873bf78c5b903e1203c5152dd24c3d25e704d57a33d3c5f7?apiKey=d47a38f753ec4543bc6dc7dd65a483a0&",
-      "link": "#"
+      "id": "e52bd445-31de-4210-8a1b-72ce19cd7872",
+      "name": "Cash App on WooCommerce",
+      "description": "Checkout with Cash App on WooCommerce is also known as WooCash, officially listed on Square App Marketplace.\n\nIntroducing the full end-to-end Cash App Pay API integration since v4.0\nIntroducing automated order status updates for PRO users: on-hold to processing when you receive the order amount",
+      "image": "https://ps.w.org/wc-cashapp/assets/icon-256x256.png?rev=2769971",
+      "link": "https://wordpress.org/plugins/wc-cashapp/"
     },
     {
-      "id": "a6c55d31-683b-4279-90b2-4255a20cc2be",
-      "name": "angelo",
-      "description": "cxwcwvwdsgvdfsdqfin scihdsfzel schoifhzeo dhoizefl\nzhfefie\nfbefbezjfblezfn\nqdfzeklf",
-      "image": "gschsc",
-      "link": "scc"
+      "id": "844249f8-a62f-4fe1-9946-4538b821ddb8",
+      "name": "Elementor Website",
+      "description": "Elementor, the leading WordPress website builder,empowers you to build professional, pixel-perfect websites. With an intuitive, no-code drag and drop interface, you can build any website.\n\nRevolutionize the way you build websites with Elementor AI, a native AI integration. Create complete sections, original text, code, and images instantly, or reference another website to recreate its layout in your website.",
+      "image": "https://ps.w.org/elementor/assets/icon.svg?rev=2597493",
+      "link": "https://wordpress.org/plugins/elementor/"
+    },
+    {
+      "id": "982a9b43-5013-4a61-8edf-4d33dc3e144e",
+      "name": "Members – Membership",
+      "description": "Members is a roles and capabilities based WordPress membership plugin. It gives your users the ultimate member experience by giving you powerful tools to add roles and capabilities and assign them to your users.",
+      "image": "https://ps.w.org/members/assets/icon-128x128.png?rev=2503334",
+      "link": "https://wordpress.org/plugins/members/"
+    },
+    {
+      "id": "2c48fe2a-5e1e-487a-83b9-67f4fc3a7530",
+      "name": "Starter Templates ",
+      "description": "Starter Templates: AI Website Builder and Elementor Templates\nThe future of website creation is here! With Starter Templates, you can create professional-looking websites in just minutes, powered by AI.",
+      "image": "https://ps.w.org/astra-sites/assets/icon-256x256.gif?rev=3060571",
+      "link": "https://wordpress.org/plugins/astra-sites/"
+    },
+    {
+      "id": "a16642f9-3ff9-44f4-986c-4e09fcb0054e",
+      "name": "Bit File Manager",
+      "description": "Best File manager and Code editor plugin for WordPress. You can edit, upload, delete, copy, move, rename, archive and extract files with the file manager plugin. You don’t need to worry about FTP anymore. It is really simple and easy to use",
+      "image": "https://ps.w.org/file-manager/assets/icon-128x128.gif?rev=3025617",
+      "link": "https://wordpress.org/plugins/file-manager/"
+    },
+    {
+      "id": "b8d441e5-b010-457f-a1ba-3bf34328985d",
+      "name": "Gutenverse",
+      "description": "Powerful and lightweight Gutenberg blocks and page builder plugin for WordPress FSE/Full Site Editor. Start customizing your website with 45+ easy-to-use blocks (including Form, Popup, Gallery, etc) and prebuild templates library available, transform your dream website into reality with ease and with light and high-performance results!.",
+      "image": "https://ps.w.org/gutenverse/assets/icon-128x128.gif?rev=2841417",
+      "link": "https://wordpress.org/plugins/gutenverse/"
     }
   ]
 }

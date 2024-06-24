@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { AppDispatch, RootState } from '../common/store';
+import { AppDispatch, RootState } from '../../common/store';
 import { selectPlugins } from '../common/slice';
 import { createPlugin, findPluginById, updatePlugin } from '../common/action';
-import { InputField } from '../components/input';
-import { Button } from '../components/button';
+import { InputField } from '../../components/input';
+import { Button } from '../../components/button';
 
 interface PluginFormProps {
     title: string;

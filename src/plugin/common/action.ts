@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:3001/plugins';
+const apiUrl = 'http://localhost:3002/plugins';
 
 export interface PluginData {
   id: string;

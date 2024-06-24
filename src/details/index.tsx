@@ -1,19 +1,25 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { ChevronBackIcon, DeleteIcon } from "../asset";
-import { AppDispatch, RootState } from "../plugin/common/store";
+import { ChevronBackIcon, DeleteIcon, PencilIcon } from "../asset";
+import { AppDispatch, RootState } from "../common/store";
 import { useDispatch, useSelector } from "react-redux";
 import { selectPluginById } from "../plugin/common/slice";
 import { deletePlugin, findPluginById } from "../plugin/common/action";
 import { useEffect, useState } from "react";
-import Modal from "../plugin/components/modal";
+import Modal from "../components/modal";
 import PluginForm from "../plugin/form";
+import { selectLoggedInUser, selectUsers } from "../user/common/slice";
+import ConfirmDeleteModal from "./sure";
+import EditionPluginForm from "../plugin/form/edit";
 
 export const PluginDetails = () => {
     let { id } : any= useParams();
     const navigate = useNavigate();
     const dispatch: AppDispatch = useDispatch();
     const plugin = useSelector((state: RootState) => selectPluginById(state, id));
-    const [showForm, setShowForm] = useState(false);
+    const loggedInUser = useSelector(selectLoggedInUser);
+    const user = JSON.parse(localStorage.getItem("user") || "{}");
+    const [showForm, setShowForm] = useState<boolean>(false);
+    const [showDeleteModal, setShowDeleteModal] = useState(false);
 
 
     useEffect(() => {
@@ -30,14 +36,18 @@ export const PluginDetails = () => {
         return <div>Loading...</div>;
       }
 
-      const handleDeletePlugin = (pluginId: string) => {
-        dispatch(deletePlugin(pluginId));
+      const handleDeletePlugin = () => {
+        dispatch(deletePlugin(id));
+        setShowDeleteModal(false);
         navigate(-1);
       };
 
       const handleEditPlugin = () => {
         setShowForm(true);
       };
+
+      const canEditOrDelete = loggedInUser && loggedInUser.email === user?.email;
+
 
     return (
         <>
@@ -57,15 +67,16 @@ export const PluginDetails = () => {
           <span className="text-sky-950">{plugin.name}</span>
           <span className="text-gray-500"> {plugin.description}</span>
         </h3>
-        
+        { canEditOrDelete &&(
         <div className="flex flex-col justify-center">
         <button onClick={handleEditPlugin} className="flex justify-center items-center p-1 rounded-lg">
-          Edit
+          <PencilIcon width={"48"} height={"48"} color={"#701a75"}/>
           </button>
-          <button onClick={() => handleDeletePlugin(id)} className="flex justify-center items-center p-1 rounded-lg">
-          <DeleteIcon width={"21"} height={"21"} color={"#e5e7eb"} />
+          <button onClick={() => setShowDeleteModal(true)} className="flex justify-center items-center p-1 rounded-lg">
+          <DeleteIcon width={"21"} height={"21"} color={"red"} />
           </button>
         </div>
+        )}
       </div>
       <div className="justify-center px-5 mt-2 text-xl tracking-tight leading-6 text-teal-700">
         
@@ -78,9 +89,15 @@ export const PluginDetails = () => {
         
       </div>
 
-      <Modal show={showForm} onClose={() => setShowForm(false)}>
-        <PluginForm title="To Edit the plugin" pluginId={id} onClose={() => setShowForm(false)} />
-      </Modal>
+       {/* <Modal show={showForm} onClose={() => setShowForm(false)}>  */}
+        <EditionPluginForm title="To Edit the plugin" pluginId={id} onClose={() => setShowForm(false)} showModal={showForm} />
+       {/* </Modal>  */}
+      <ConfirmDeleteModal
+        show={showDeleteModal}
+        onClose={() => setShowDeleteModal(false)}
+        onConfirm={handleDeletePlugin}
+        pluginName={plugin.name}
+      />
     </>
     )
 }

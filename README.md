@@ -73,5 +73,5 @@ To delete a plugin, once on the plugin detail page, click on the delete icon.
 - **Redux Thunk**: Middleware to handle asynchronous operations in Redux.
 - **Axios**: Library to make HTTP requests.
 - **json-server**: Tool to quickly create a RESTful API using a JSON file.
-```
+
 

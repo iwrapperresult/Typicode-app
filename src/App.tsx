@@ -3,7 +3,7 @@ import PluginList from './plugin';
 import { Header } from './layout/header';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-import PluginRoutes from './plugin/routers';
+import PluginRoutes from './routers';
 
 function App() {
   return (

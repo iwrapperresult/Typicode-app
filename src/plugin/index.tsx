@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from './common/store';
+import { AppDispatch, RootState } from '../common/store';
 import { selectError, selectLoading, selectPlugins } from './common/slice';
-import { deletePlugin, foundPlugin } from './common/action';
-import { Card } from './components/card';
+import {  foundPlugin } from './common/action';
+import { Card } from '../components/card';
 
 
 const PluginList: React.FC = () => {
@@ -11,7 +11,6 @@ const PluginList: React.FC = () => {
   const plugins = useSelector((state: RootState) => selectPlugins(state));
   const loading = useSelector((state: RootState) => selectLoading(state));
   const error = useSelector((state: RootState) => selectError(state));
-  const [editingPluginId, setEditingPluginId] = useState<string | null>(null);
 
   useEffect(() => {
     dispatch(foundPlugin());
